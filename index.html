@@ -7,13 +7,15 @@
     <link rel="icon" href="img/favicon.ico">
     <title>Hajia Kitchen</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-        <a href="" class="logo">Foods</a>
-        <ul class="nav">
+<body class="h-screen items-center">
+    <header class="w-full items-center -left-20">
+        <a href="" class=" text-3xl font-bold text-[#ff702a]">NOTHERNCHEFF</a>
+        <ul class=" hidden sm:flex sm:gap-4">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -23,31 +25,33 @@
 
         </ul>
     </header>
-    <section id="home" class="home">
-        <div class="home-text">
-           <h1>Full Dish</h1>
-           <h2>Food is the <br> Most precious thing</h2>
+    <section id="home" class="flex flex-col-reverse gap-10 sm:grid sm:grid-cols-2 sm:items-center p-4">
+        <div class="p-4">
+           <h1 class="text-5xl font-bold mb-5">Full Dish</h1>
+           <h2 class="text-3xl p-4">Food is the <span class="text-[#ff702a]">Most precious thing</span> </h2>
            <a href="" class="btn">Todays Menu</a>
         </div>
 
-        <div class="home-img">
-            <img src="img/home.png" alt="">
+        <div class="">
+            <img src="img/home.png"  alt="">
         </div>
 </section>
 
 
-     <section id="about" class="about">
-         <div class="container">
-            <div class="home-img">
+     <section id="about" class="flex flex-col-reverse gap-10 items-center justify-center">
+         <div class="mt-10">
+            <div class="">
                 <img src="img/about.png" alt="">
             </div>
-        <div class="home-text">
-           <p>About us</p>
-           <h2>we speak the good food english</h2>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo iusto consectetur obcaecati dicta porro eius suscipit nihil fugit assumenda, in beatae, doloribus voluptates a corporis dolore animi aliquam dolorum.</p>
+        </div>
+        <div class="flex flex-col items-center">
+           <p class="text-3xl font-bold -mt-3">About us</p>
+
+           <p class="max-w-xl mx-auto text-lg">Lorem ipsum dolor sit 
+            amet consectetur adipisicing 
+            elit. Illo iusto consectetur obcaecati dicta porro eius suscipit nihil fugit assumenda, in beatae, doloribus voluptates a corporis dolore animi aliquam dolorum.</p>
            <a href="" class="btn">Learn more</a>
         </div>
-         </div>
  </section>
     
 <section id="menu" class="menu" >
